@@ -7,6 +7,6 @@ app.config["DEBUG"] = True
 @app.route('/', methods=['POST','GET','OPTIONS'])
 def home():
     data=request.get_data()
-    return data
-    
+    return "hello"
+
 app.run()

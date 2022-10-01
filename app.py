@@ -9,4 +9,4 @@ def home():
     data=request.get_data()
     return "hello"
 
-app.run()
+app.run('0.0.0.0')

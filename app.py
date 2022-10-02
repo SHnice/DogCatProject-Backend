@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,render_template
 import flask
 import numpy as np
 import io, base64
@@ -16,6 +16,9 @@ import pickle
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/', methods=['POST','GET','OPTIONS'])
 def home():

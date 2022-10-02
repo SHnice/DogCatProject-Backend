@@ -8,7 +8,7 @@ flask = "*"
 gunicorn = "*"
 numpy = "*"
 pillow = "*"
-tensorflow = "*"
+tensorflow-cpu = "*"
 
 [dev-packages]
 

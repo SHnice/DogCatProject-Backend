@@ -44,7 +44,7 @@ def home():
         return "This is a "+labels[0]
     myresult= n_model.predict(my_image)
     res = flask.Response([str(myresult[0][0]),preds(myresult[0][0])])
-    res.headers["Access-Control-Allow-Origin"] = "https://dogcatmodel.netlify.app/"
+    res.headers["Access-Control-Allow-Origin"] = "*"
     print('....................',preds(myresult[0][0]),'...................')
     
     return res

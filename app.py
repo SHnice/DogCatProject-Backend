@@ -7,6 +7,7 @@ app.config["DEBUG"] = True
 @app.route('/', methods=['POST','GET','OPTIONS'])
 def home():
     data=request.get_data()
-    return "hello"
+    return "hello from myhapp"
 
-app.run('0.0.0.0')
+if __name__ == '__main__':
+      app.run(host='0.0.0.0', port=80)
